@@ -1,0 +1,23 @@
+int[] arr = {51,72,5,84,67,32};
+int sum=0;
+int count=0;
+int i;
+      
+for(i=0 ; i<arr.Length ; i++)
+{
+      sum = 0;
+      while(arr[i]>0)
+      {
+          sum += arr[i]%10;
+          arr[i] -= sum;
+          arr[i]/=10;
+     }
+    
+    if(sum<10)
+     {
+        count++;
+     }
+    else {continue;}
+}
+
+Console.WriteLine(count);

@@ -1,0 +1,17 @@
+int n=5;
+int m=36;
+int count=0;
+
+for (int i = n; i<m; i++)
+{
+    if(i%15==0)
+    {
+        count++;
+    }
+    else
+    {
+        continue;
+    }
+}
+
+Console.WriteLine(count);
